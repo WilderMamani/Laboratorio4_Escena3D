@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="boton_animacion"
+        android:text="on/offf animación" />
+
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/boton1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/boton1"
+        android:onClick="boton_simple_paso"
+        android:text="on/off simple paso" />
+
+    <Button
+        android:id="@+id/boton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/boton1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/boton2"
+        android:onClick="boton_incrementa"
+        android:text="+ velocidad" />
+
+    <Button
+        android:id="@+id/boton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/boton1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/boton3"
+        android:onClick="boton_decrementa"
+        android:text="- velocidad" />
+
+</RelativeLayout>
